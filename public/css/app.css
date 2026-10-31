@@ -1,0 +1,31 @@
+:root{
+  --ink:#16324a; --ink-soft:#4a6178; --paper:#f6f8fa; --card:#ffffff;
+  --line:#d5dde5; --tag:#f2b233; --tag-ink:#3d2b00; --danger:#b3261e; --ok:#1f7a4d;
+}
+*{box-sizing:border-box}
+html{font-size:17px}
+body{margin:0;font-family:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;min-height:100vh}
+a{color:var(--ink)}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:.9rem 1.5rem;background:var(--ink);color:#fff}
+.topbar .brand{font-weight:700;font-size:1.15rem;display:flex;align-items:center;gap:.6rem}
+.topbar .brand i{display:inline-block;width:.9rem;height:.9rem;background:var(--tag);border-radius:50% 50% 50% 0;transform:rotate(-45deg)}
+.topbar form{margin:0;display:flex;align-items:center;gap:1rem}
+.topbar span{color:#cfdbe6;font-size:.9rem}
+.wrap{max-width:30rem;margin:3rem auto;padding:0 1rem}
+.wrap.wide{max-width:48rem}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:2rem}
+h1{font-size:1.55rem;margin:0 0 .3rem}
+.sub{color:var(--ink-soft);margin:0 0 1.5rem}
+label{display:block;font-weight:600;margin:1rem 0 .3rem;font-size:.95rem}
+input[type=text],input[type=email],input[type=password]{width:100%;padding:.7rem .85rem;border:1.5px solid var(--line);border-radius:6px;font:inherit;background:#fff;color:var(--ink)}
+input:focus,button:focus-visible,a:focus-visible{outline:3px solid var(--tag);outline-offset:2px;border-color:var(--ink)}
+input[dir=ltr]{text-align:left}
+.check{display:flex;align-items:center;gap:.5rem;margin:1rem 0 0;font-weight:400}
+.btn{display:block;width:100%;margin-top:1.5rem;padding:.8rem;border:0;border-radius:6px;background:var(--tag);color:var(--tag-ink);font:inherit;font-weight:700;cursor:pointer}
+.btn:hover{filter:brightness(.95)}
+.btn.small{display:inline-block;width:auto;margin:0;padding:.35rem .9rem;background:transparent;color:#fff;border:1px solid #6f8aa3}
+.err{color:var(--danger);font-size:.88rem;margin:.3rem 0 0}
+.alert{background:#fdecea;color:var(--danger);border-radius:6px;padding:.7rem 1rem;margin-bottom:1rem}
+.foot{text-align:center;margin-top:1.3rem;color:var(--ink-soft);font-size:.95rem}
+.badge{display:inline-block;padding:.1rem .7rem;border-radius:99px;background:var(--tag);color:var(--tag-ink);font-size:.85rem;font-weight:600}
+@media (prefers-reduced-motion:no-preference){.btn{transition:filter .15s}}
